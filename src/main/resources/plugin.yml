@@ -1,0 +1,88 @@
+name: OXPlugin
+author: SheriFFu
+description: Un plugin de ox destinat pentru Faikkit
+version: 1.0
+api-version: 1.16
+main: me.SheriFFu.oxplugin.Main
+
+commands:
+  ox:
+    description: Comanda de baza pentru pluginul OX
+    permission: ox.command.base
+    usage: Foloseste /ox help pentru a vedea comenzile disponibile
+
+permissions:
+  ox.command.*:
+    description: Permisiunea sa folosesti toate comenziile pluginului
+    children:
+      ox.command.help: true
+      ox.command.join: true
+      ox.command.quit: true
+      ox.command.create: true
+      ox.command.close: true
+      ox.command.close.others: true
+      ox.command.state: true
+      ox.command.start: true
+      ox.command.kick: true
+      ox.command.gameconfig: true
+      ox.command.arenaconfig: true
+      ox.command.askquestion: true
+      ox.command.reload: true
+
+  ox.command.base:
+    description: Permisiunea sa folosesti /ox
+    default: true
+
+  ox.command.help:
+    description: Permisiunea sa folosesti /ox help
+    default: true
+
+  ox.command.join:
+    description: Permisiunea sa te inscrii in event
+    default: true
+
+  ox.command.quit:
+    description: Permisiunea sa iesi din un eveniment
+    default: true
+
+  ox.command.create:
+    description: Permisiunea sa creezi un eveniment OX
+    default: false
+
+  ox.command.close:
+    description: Permisiunea sa inchizi un eveniment
+    default: false
+    children:
+      ox.command.close.others: true
+
+  ox.command.close.others:
+    description: Permisiunea sa inchizi evenimentul altui host
+    default: false
+
+  ox.command.state:
+    description: Permisiunea sa (de)blochezi evenimentul OX
+    default: false
+
+  ox.command.start:
+    description: Permisiunea sa pornesti evenimentul OX
+    default: false
+
+  ox.command.kick:
+    description: Permisiunea sa elimini un jucator din eveniment
+    default: false
+
+  ox.command.gameconfig:
+    description: Permisiunea sa configurezi un eveniment
+    default: false
+
+  ox.command.arenaconfig:
+    description: Permisiunea sa configurezi arena de OX
+    default: false
+
+  ox.command.askquestion:
+    description: Permisiunea sa pui o intrebare
+    default: false
+
+  ox.command.reload:
+    description: Permisiunea sa repornesti pluginul
+    default: false

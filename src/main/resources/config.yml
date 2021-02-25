@@ -1,0 +1,104 @@
+messages:
+  # Format intrebare
+  question:
+    - "%question%"
+    - O - Adevarat
+    - X - Fals
+
+  # Sintaxe comenzi
+  usage:
+    base: Comanda introdusa nu exista, foloseste /ox help
+    state: Sintaxa - /ox state <locked/unlocked>
+    start: Sintaxa - /ox start <secunde>
+    arenaconfig: Sintaxa - /ox arenaconfig <x/o/neutral>
+    askquestion: Sintaxa - /ox <x/o> <intrebare>
+    kick: Sintaxa - /ox kick <jucator>
+
+  # Text /ox help
+  help:
+    - Faikkit OX
+    - /ox help - afiseaza comenziile
+    - /ox join - alatura-te evenimentului OX
+    - /ox quit - iesi din eveniment
+    - /ox create - creeaza un eveniment de tip OX
+    - /ox close - opreste evenimentul
+    - /ox state <locked/unlocked> - (de)blocheaza evenimentul
+    - /ox start <timp(secunde)> - porneste evenimentul in X secunde
+    - /ox gameconfig - configureaza proprietatiile evenimentului
+    - /ox arenaconfig <x/o/neutral> - configureaza arena ox
+    - /ox askquestion <corect[x/o]> <intrebare> - pune o intrebare
+    - /ox kick <jucator> - da kick unui jucator din eveniment
+    - /ox reload - Reporneste pluginul OX
+
+  # Mesaje erori
+  errors:
+    noperm: Nu ai voie
+    noconsole: Aceasta comanda poate fi folosita doar din joc
+    sourcehost: Nu-i poti da kick creatorului evenimentului
+    joinhost: Nu te poti alatura unui eveniment fiind creatorul acestuia.
+    inexistentplayer: Acest jucator nu exista
+    playernotjoined: Acest jucator nu este in eveniment
+    alreadyrunning: Deja ruleaza un eveniment de tip ox
+    alreadystarted: Evenimentul a pornit deja
+    nogame: Nu e niciun eveniment in progres
+    otherhost: Nu ai perimsiunea sa inchizi un event hostat de altcineva
+    alreadyjoined: Deja participi in evenimentul curent
+    gamelocked: Nu poti participa la eveniment
+    notjoined: Nu participi in niciun eveniment
+    editrun: Nu poti edita arenele in timpul unui eveniment activ
+    alreadyediting: Un jucator editeaza arenele. Asteapta pana ce acesta termina
+    noplayers: Nu este niciun jucator in eveniment
+    noarenas: Trebuie sa configurezi intai arenele inainte sa creezi un eveniment
+    randomquestions: Evenimentul alege intrebarile aleatoriu
+    onlyhost: Doar host-ul poate executa aceasta comanda
+    roundinprogress: Deja ruleaza o runda, asteapta pana se termina
+
+  notifications:
+    corner1: Ai ales primul colt
+    corner2: Ai ales al 2-lea colt
+    areacreated: Regiunea a fost modificata si salvata
+    gamecreate: Ai creat un eveniment de tip OX.
+    createglobal: "%host% a creat un eveniment de tip OX. Foloseste /ox join pentru a te alatura"
+    gamestart: Evenimentul OX a inceput.
+    joinevent: Te-ai alaturat evenimentului OX.
+    roundchange: Nu sunt suficiente intrebari pentru ox. Numarul de runde a fost scazut la numarul de intrebari disponibile.
+    wronganswer: Ai raspuns gresit si ai fost eliminat din eveniment
+    wronganswerhost: "%player% a raspuns gresit si a fost eliminat din eveniment"
+    nextround: Urmatoarea runda incepe in 5 secunde
+    reload: Pluginul a fost reincarcat cu succes
+    playerjoin: "%player% s-a alaturat evenimentului"
+    playerquit: "%player% a iesit din eveniment"
+
+#Nu edita astea aici. Foloseste /ox arenaeditor
+arena:
+  world:
+  x:
+    configured: false
+    corner1:
+      x:
+      y:
+      z:
+    corner2:
+      x:
+      y:
+      z:
+  o:
+    configured: false
+    corner1:
+      x:
+      y:
+      z:
+    corner2:
+      x:
+      y:
+      z:
+  neutral:
+    configured: false
+    corner1:
+      x:
+      y:
+      z:
+    corner2:
+      x:
+      y:
+      z:

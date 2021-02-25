@@ -1,0 +1,7 @@
+questions:
+  1:
+    text: "test"
+    answer: "x"
+  2:
+    text: "test2"
+    answer: "o"
